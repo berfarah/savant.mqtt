@@ -9,12 +9,23 @@ import (
 )
 
 // Example Config:
-// { "registry_file_path": "<path>.json",
+// { "topic_prefix": "homeassistant",
+//   "topic_node_id": "savant",
+//   "broker": "<tcp|ssl>://<url>:<port>",
+//   "ssl_cert_path": "<path>.crt",
+//   "registry_file_path": "<path>.json",
 //   "poll_seconds": 5
 // }
 type Config struct {
+	TopicPrefix      string `json:"topic_prefix"`
+	TopicNodeID      string `json:"topic_node_id"`
+	Broker           string `json:"broker"`
+	UseSSL           bool   `json:"-"`
+	SSLCertPath      string `json:"ssl_cert_path"`
 	RegistryFilePath string `json:"registry_file_path"`
 	PollSeconds      int    `json:"poll_seconds"`
+	Username         string `json:"username"`
+	Password         string `json:"password"`
 }
 
 var configPath string
@@ -40,6 +51,18 @@ func LoadConfig() *Config {
 	bytes, _ := ioutil.ReadAll(file)
 	if err := json.Unmarshal([]byte(bytes), &config); err != nil {
 		log.Fatalf("Couldn't open config file: %v\n", err)
+	}
+
+	if config.TopicPrefix == "" {
+		config.TopicPrefix = "homeassistant"
+	}
+
+	if config.TopicNodeID == "" {
+		config.TopicNodeID = "savant"
+	}
+
+	if config.SSLCertPath != "" {
+		config.UseSSL = true
 	}
 
 	if registryPath != "" {
