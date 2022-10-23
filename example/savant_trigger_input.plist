@@ -1,0 +1,2352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RPMExportDataTypeKey</key>
+	<string>RPMTriggersListType</string>
+	<key>RPMExportListKey</key>
+	<array>
+		<dict>
+			<key>Group Name</key>
+			<string>Lights</string>
+			<key>Table</key>
+			<array>
+
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Upper Bath Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_001</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Upper Bath</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_001</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_001</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_001</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Path Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_005</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Path</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_005</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_005</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_005</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Path Hall</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_00C</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Path</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_00C</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_00C</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_00C</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Office Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_00F</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Office</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_00F</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_00F</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_00F</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Nursery Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_002</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Nursery</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_002</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_002</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_002</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOn</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>00D</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Master Closet</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Name</key>
+					<string>Master Closet His Closet</string>
+					<key>State Match</key>
+					<array>
+						<dict>
+							<key>Match Data</key>
+							<string>0</string>
+							<key>Match Logic</key>
+							<string>Equal</string>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_00D</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_00D</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_00D</string>
+						</dict>
+					</array>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOff</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>00D</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Master Closet</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_00D</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_00D</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_00D</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOn</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>00B</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Master Closet</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Name</key>
+					<string>Master Closet Her Closet</string>
+					<key>State Match</key>
+					<array>
+						<dict>
+							<key>Match Data</key>
+							<string>0</string>
+							<key>Match Logic</key>
+							<string>Equal</string>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_00B</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_00B</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_00B</string>
+						</dict>
+					</array>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOff</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>00B</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Master Closet</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_00B</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_00B</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_00B</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOn</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>012</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Master Bath</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Name</key>
+					<string>Master Bath Vanity</string>
+					<key>State Match</key>
+					<array>
+						<dict>
+							<key>Match Data</key>
+							<string>0</string>
+							<key>Match Logic</key>
+							<string>Equal</string>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_012</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_012</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_012</string>
+						</dict>
+					</array>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOff</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>012</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Master Bath</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_012</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_012</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_012</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Master Bath Tub Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_011</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Master Bath</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_011</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_011</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_011</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Master Bath Main Pots</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_00E</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Master Bath</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_00E</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_00E</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_00E</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Master Nancy's Night Stand</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_016</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Master</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_016</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_016</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_016</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Master Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_010</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Master</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_010</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_010</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_010</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Master Bernardo's Night Stand</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_014</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Master</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_014</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_014</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_014</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Lower Bath Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_01D</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Lower Bath</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_01D</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_01D</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_01D</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOn</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>01C</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Lower Bath</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Name</key>
+					<string>Lower Bath Fan and Vanity</string>
+					<key>State Match</key>
+					<array>
+						<dict>
+							<key>Match Data</key>
+							<string>0</string>
+							<key>Match Logic</key>
+							<string>Equal</string>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_01C</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_01C</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_01C</string>
+						</dict>
+					</array>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOff</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>01C</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Lower Bath</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_01C</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_01C</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_01C</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOn</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>019</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Lower Bath</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Name</key>
+					<string>Lower Bath Closet</string>
+					<key>State Match</key>
+					<array>
+						<dict>
+							<key>Match Data</key>
+							<string>0</string>
+							<key>Match Logic</key>
+							<string>Equal</string>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_019</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_019</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_019</string>
+						</dict>
+					</array>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOff</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>019</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Lower Bath</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_019</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_019</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_019</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Living Main Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_006</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Living</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_006</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_006</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_006</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Living Lamp</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_015</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Living</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_015</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_015</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_015</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Living Fireplace Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_003</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Living</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_003</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_003</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_003</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Kitchen Stove Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_007</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Kitchen</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_007</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_007</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_007</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Kitchen Sink Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_008</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Kitchen</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_008</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_008</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_008</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Kitchen Main Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_004</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Kitchen</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_004</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_004</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_004</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Kitchen Back Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_013</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Kitchen</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_013</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_013</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_013</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOn</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>021</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Guest Bed</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Name</key>
+					<string>Guest Bed Right Closet</string>
+					<key>State Match</key>
+					<array>
+						<dict>
+							<key>Match Data</key>
+							<string>0</string>
+							<key>Match Logic</key>
+							<string>Equal</string>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_021</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_021</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_021</string>
+						</dict>
+					</array>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOff</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>021</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Guest Bed</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_021</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_021</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_021</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Guest Bed Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_01E</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Guest Bed</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_01E</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_01E</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_01E</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOn</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>01A</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Guest Bed</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Name</key>
+					<string>Guest Bed Left Closet Light</string>
+					<key>State Match</key>
+					<array>
+						<dict>
+							<key>Match Data</key>
+							<string>0</string>
+							<key>Match Logic</key>
+							<string>Equal</string>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_01A</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_01A</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_01A</string>
+						</dict>
+					</array>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOff</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>01A</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Guest Bed</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_01A</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_01A</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_01A</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Entry Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_01B</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Entry</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_01B</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_01B</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_01B</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOn</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>017</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Entry</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Name</key>
+					<string>Entry Landscape Lights</string>
+					<key>State Match</key>
+					<array>
+						<dict>
+							<key>Match Data</key>
+							<string>0</string>
+							<key>Match Logic</key>
+							<string>Equal</string>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_017</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_017</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_017</string>
+						</dict>
+					</array>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOff</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>017</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Entry</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_017</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_017</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_017</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Dining Chandelier</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_00A</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Dining</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_00A</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_00A</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_00A</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Den Lights</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_022</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Den</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_022</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_022</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_022</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Den Laundry Hall Light</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_018</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Den</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_018</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_018</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_018</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Den Bath Entrance Light</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_020</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Den</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_020</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_020</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_020</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array/>
+					<key>Name</key>
+					<string>Back Door Side Door Light</string>
+					<key>State Match</key>
+					<array/>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string></string>
+								<key>Request</key>
+								<string>DimmerSetVariable_1_01F</string>
+								<key>Request Data</key>
+								<dict/>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Back Door</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_01F</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_01F</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_01F</string>
+						</dict>
+					</array>
+				</dict>
+	
+				<dict>
+					<key>Else Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOn</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>009</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Back Door</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Name</key>
+					<string>Back Door Back Door Light</string>
+					<key>State Match</key>
+					<array>
+						<dict>
+							<key>Match Data</key>
+							<string>0</string>
+							<key>Match Logic</key>
+							<string>Equal</string>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_009</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_009</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_009</string>
+						</dict>
+					</array>
+					<key>Then Actions</key>
+					<array>
+						<dict>
+							<key>Service Request</key>
+							<dict>
+								<key>RPMServicePasteboardServiceStateKey</key>
+								<string>inactive</string>
+								<key>Request</key>
+								<string>SwitchOff</string>
+								<key>Request Data</key>
+								<dict>
+									<key>Address1</key>
+									<string>009</string>
+									<key>Address2</key>
+									<string>1</string>
+								</dict>
+								<key>Service Type</key>
+								<string>SVC_ENV_LIGHTING</string>
+								<key>Source Component Name</key>
+								<string>Farah SEA</string>
+								<key>Source Logical Component Name</key>
+								<string>RacePointMedia_host</string>
+								<key>Variant ID</key>
+								<string>1</string>
+								<key>Zone</key>
+								<string>Back Door</string>
+							</dict>
+						</dict>
+					</array>
+					<key>Trigger States</key>
+					<array>
+						<dict>
+							<key>RPMStateName</key>
+							<string>userDefined.SetDimmerLevel_1_009</string>
+							<key>RPMStateType</key>
+							<string>RPMBasicStateName</string>
+							<key>State Name</key>
+							<string>SetDimmerLevel_1_009</string>
+							<key>State Scope</key>
+							<string>userDefined</string>
+							<key>State Type</key>
+							<string>integer</string>
+							<key>identifiers</key>
+							<array/>
+							<key>scope</key>
+							<string>userDefined</string>
+							<key>stateName</key>
+							<string>SetDimmerLevel_1_009</string>
+						</dict>
+					</array>
+				</dict>
+	
+			</array>
+		</dict>
+	</array>
+	<key>RPMExportVersionKey</key>
+	<integer>1</integer>
+</dict>
+</plist>

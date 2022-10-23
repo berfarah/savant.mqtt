@@ -22,7 +22,7 @@ func New(config *config.Config, manager savant.LightsManager) *Server {
 }
 
 func (s Server) buildTopic(light *savant.Light, parts ...string) string {
-	parts = append([]string{s.config.TopicPrefix, "light", s.config.TopicNodeID, light.ID()}, parts...)
+	parts = append([]string{s.config.TopicPrefix, "light", s.config.TopicNodeID, light.ID}, parts...)
 	return strings.Join(parts, "/")
 }
 
@@ -36,13 +36,13 @@ func (s Server) discoverySetup() {
 
 	for id, light := range s.Manager.Lights {
 		discoveryPayload := map[string]interface{}{
-			"name":          light.Name(),
+			"name":          light.Name,
 			"schema":        "json",
 			"state_topic":   s.buildTopic(light),
 			"command_topic": s.buildTopic(light, "set"),
 		}
 
-		if light.IsDimmer() {
+		if light.IsDimmer {
 			discoveryPayload["brightness"] = true
 			discoveryPayload["color_mode"] = true
 			discoveryPayload["brightness_scale"] = 100
@@ -123,7 +123,7 @@ func (s Server) Handler(client mqtt.Client, msg mqtt.Message) {
 		return
 	}
 
-	if light.IsDimmer() {
+	if light.IsDimmer {
 		if payload.State == "OFF" {
 			payload.Brightness = 0
 		}

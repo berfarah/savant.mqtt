@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if ! command -v jq &> /dev/null; then
+  echo "Requires jq (https://stedolan.github.io/jq)"
+fi
+
+transformation='[.Lighting[] | {
+  id: (.Address1 + "_" + .Address2),
+  zone: .["Controller Zone"],
+  name: (.["Controller Zone"] + " " + .["Button Label"]),
+  is_dimmer: (.Command == "DimmerSet"),
+  read_state_name: .State1.RPMStateName,
+  write_state_name: ("userDefined." + "SetDimmerLevel_" + .Address2 + "_" + .Address1),
+}]'
+
+if [[ $1 == *.plist ]]; then
+  plutil -convert json -o - "$1" | jq -r "$transformation"
+elif [[ $1 == *.json ]]; then
+  jq -r "$transformation" "$1"
+else
+  echo "Invalid argument - expected plist or json file"
+  exit 1
+fi

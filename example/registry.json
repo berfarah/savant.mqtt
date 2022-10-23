@@ -1,0 +1,240 @@
+[
+  {
+    "id": "001_1",
+    "name": "Upper Bath Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_001",
+    "write_state_name": "userDefined.SetDimmerLevel_1_001"
+  },
+  {
+    "id": "005_1",
+    "name": "Path Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_005",
+    "write_state_name": "userDefined.SetDimmerLevel_1_005"
+  },
+  {
+    "id": "00C_1",
+    "name": "Path Hall",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_00C",
+    "write_state_name": "userDefined.SetDimmerLevel_1_00C"
+  },
+  {
+    "id": "00F_1",
+    "name": "Office Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_00F",
+    "write_state_name": "userDefined.SetDimmerLevel_1_00F"
+  },
+  {
+    "id": "002_1",
+    "name": "Nursery Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_002",
+    "write_state_name": "userDefined.SetDimmerLevel_1_002"
+  },
+  {
+    "id": "00D_1",
+    "name": "Master Closet His Closet",
+    "is_dimmer": false,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_00D",
+    "write_state_name": "userDefined.SetDimmerLevel_1_00D"
+  },
+  {
+    "id": "00B_1",
+    "name": "Master Closet Her Closet",
+    "is_dimmer": false,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_00B",
+    "write_state_name": "userDefined.SetDimmerLevel_1_00B"
+  },
+  {
+    "id": "012_1",
+    "name": "Master Bath Vanity",
+    "is_dimmer": false,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_012",
+    "write_state_name": "userDefined.SetDimmerLevel_1_012"
+  },
+  {
+    "id": "011_1",
+    "name": "Master Bath Tub Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_011",
+    "write_state_name": "userDefined.SetDimmerLevel_1_011"
+  },
+  {
+    "id": "00E_1",
+    "name": "Master Bath Main Pots",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_00E",
+    "write_state_name": "userDefined.SetDimmerLevel_1_00E"
+  },
+  {
+    "id": "016_1",
+    "name": "Master Nancy's Night Stand",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_016",
+    "write_state_name": "userDefined.SetDimmerLevel_1_016"
+  },
+  {
+    "id": "010_1",
+    "name": "Master Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_010",
+    "write_state_name": "userDefined.SetDimmerLevel_1_010"
+  },
+  {
+    "id": "014_1",
+    "name": "Master Bernardo's Night Stand",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_014",
+    "write_state_name": "userDefined.SetDimmerLevel_1_014"
+  },
+  {
+    "id": "01D_1",
+    "name": "Lower Bath Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_01D",
+    "write_state_name": "userDefined.SetDimmerLevel_1_01D"
+  },
+  {
+    "id": "01C_1",
+    "name": "Lower Bath Fan and Vanity",
+    "is_dimmer": false,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_01C",
+    "write_state_name": "userDefined.SetDimmerLevel_1_01C"
+  },
+  {
+    "id": "019_1",
+    "name": "Lower Bath Closet",
+    "is_dimmer": false,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_019",
+    "write_state_name": "userDefined.SetDimmerLevel_1_019"
+  },
+  {
+    "id": "006_1",
+    "name": "Living Main Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_006",
+    "write_state_name": "userDefined.SetDimmerLevel_1_006"
+  },
+  {
+    "id": "015_1",
+    "name": "Living Lamp",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_015",
+    "write_state_name": "userDefined.SetDimmerLevel_1_015"
+  },
+  {
+    "id": "003_1",
+    "name": "Living Fireplace Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_003",
+    "write_state_name": "userDefined.SetDimmerLevel_1_003"
+  },
+  {
+    "id": "007_1",
+    "name": "Kitchen Stove Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_007",
+    "write_state_name": "userDefined.SetDimmerLevel_1_007"
+  },
+  {
+    "id": "008_1",
+    "name": "Kitchen Sink Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_008",
+    "write_state_name": "userDefined.SetDimmerLevel_1_008"
+  },
+  {
+    "id": "004_1",
+    "name": "Kitchen Main Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_004",
+    "write_state_name": "userDefined.SetDimmerLevel_1_004"
+  },
+  {
+    "id": "013_1",
+    "name": "Kitchen Back Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_013",
+    "write_state_name": "userDefined.SetDimmerLevel_1_013"
+  },
+  {
+    "id": "021_1",
+    "name": "Guest Bed Right Closet",
+    "is_dimmer": false,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_021",
+    "write_state_name": "userDefined.SetDimmerLevel_1_021"
+  },
+  {
+    "id": "01E_1",
+    "name": "Guest Bed Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_01E",
+    "write_state_name": "userDefined.SetDimmerLevel_1_01E"
+  },
+  {
+    "id": "01A_1",
+    "name": "Guest Bed Left Closet Light",
+    "is_dimmer": false,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_01A",
+    "write_state_name": "userDefined.SetDimmerLevel_1_01A"
+  },
+  {
+    "id": "01B_1",
+    "name": "Entry Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_01B",
+    "write_state_name": "userDefined.SetDimmerLevel_1_01B"
+  },
+  {
+    "id": "017_1",
+    "name": "Entry Landscape Lights",
+    "is_dimmer": false,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_017",
+    "write_state_name": "userDefined.SetDimmerLevel_1_017"
+  },
+  {
+    "id": "00A_1",
+    "name": "Dining Chandelier",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_00A",
+    "write_state_name": "userDefined.SetDimmerLevel_1_00A"
+  },
+  {
+    "id": "022_1",
+    "name": "Den Lights",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_022",
+    "write_state_name": "userDefined.SetDimmerLevel_1_022"
+  },
+  {
+    "id": "018_1",
+    "name": "Den Laundry Hall Light",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_018",
+    "write_state_name": "userDefined.SetDimmerLevel_1_018"
+  },
+  {
+    "id": "020_1",
+    "name": "Den Bath Entrance Light",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_020",
+    "write_state_name": "userDefined.SetDimmerLevel_1_020"
+  },
+  {
+    "id": "01F_1",
+    "name": "Back Door Side Door Light",
+    "is_dimmer": true,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_01F",
+    "write_state_name": "userDefined.SetDimmerLevel_1_01F"
+  },
+  {
+    "id": "009_1",
+    "name": "Back Door Back Door Light",
+    "is_dimmer": false,
+    "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_009",
+    "write_state_name": "userDefined.SetDimmerLevel_1_009"
+  }
+]

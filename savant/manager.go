@@ -23,8 +23,8 @@ func New(config *config.Config) (LightsManager, error) {
 	ids := make([]string, len(lights))
 	lightsMap := make(map[string]*Light)
 	for i, light := range lights {
-		ids[i] = light.ID()
-		lightsMap[light.ID()] = light
+		ids[i] = light.ID
+		lightsMap[light.ID] = light
 	}
 
 	return LightsManager{
@@ -59,7 +59,7 @@ func (sc StateChange) State() string {
 func (l LightsManager) refreshState() error {
 	stateNames := make([]string, 0, len(l.Lights))
 	for _, id := range l.ids {
-		stateNames = append(stateNames, l.Lights[id].stateName())
+		stateNames = append(stateNames, l.Lights[id].ReadStateName)
 	}
 
 	states, err := scliClient.Run("readstate", stateNames...)
@@ -114,7 +114,7 @@ func (l LightsManager) Set(id string, level int) error {
 		level = 100
 	}
 
-	if _, err := scliClient.Run("servicerequest", l.Lights[id].savant.setArgs(level)...); err != nil {
+	if _, err := scliClient.Run("writestate", l.Lights[id].WriteStateName, strconv.Itoa(level)); err != nil {
 		return err
 	}
 	l.setState(id, level)
@@ -124,20 +124,10 @@ func (l LightsManager) Set(id string, level int) error {
 
 // Turn On sets Level to 100, turns the light on
 func (l LightsManager) TurnOn(id string) error {
-	if _, err := scliClient.Run("servicerequest", l.Lights[id].savant.onArgs()...); err != nil {
-		return err
-	}
-	l.setState(id, 100)
-
-	return nil
+	return l.Set(id, 100)
 }
 
 // Turn Off sets Level to 0, turns the light off
 func (l LightsManager) TurnOff(id string) error {
-	if _, err := scliClient.Run("servicerequest", l.Lights[id].savant.offArgs()...); err != nil {
-		return err
-	}
-	l.setState(id, 0)
-
-	return nil
+	return l.Set(id, 0)
 }

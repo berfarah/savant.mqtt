@@ -10,10 +10,38 @@ It's set up to work with [Homeassistant's MQTT discovery](https://www.home-assis
 ### Necessary files for the service
 
 1. Get your lights registry from Savant by exporting loads (plist) and
-   converting them with `plutil -convert json -o [newfile] [oldfile]`
+   converting them with `./transform [load.plist] > [oldfile]`
 2. Set up your MQTT broker in your environment
 3. Create a `savantmqtt.conf` file (see [config](./config/config.go) for
    details on settings.
+
+### Configuring Savant
+
+Because managing state is faster than making service requests, we'll want to use
+triggers to update our lights.
+
+#### Required Workflows for Triggers
+
+Steps:
+- View Services
+- Pick the service where you need lights to match state
+- Create a new Service Request (naming convention: `DimmerSetVariable_{Address2}_{Address1}`
+- Double click the service to open in automator
+- Savant Action Argument Setter as step 1 with DimmerLevel from State Center and
+    Value of `userDefined.SetDimmerLevel_{Address2}_{Address1}`
+- Main action with DimmerSet on Lighting Controller Source
+
+#### Triggers
+
+You can generate the triggers with: `./converttrigger/transform > tmp.json`
+
+```bin/bash
+./converttrigger/transform [load.plist] > tmp.json
+go run ./converttrigger/main.go tmp.json
+# Import tmp.plist as into triggers - you have to do this in savant
+# Clean up
+rm tmp.json tmp.plist
+```
 
 ### Getting running
 

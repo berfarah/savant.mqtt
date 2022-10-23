@@ -1,0 +1,206 @@
+[
+  {
+    "zone": "Upper Bath",
+    "button_name": "Lights",
+    "address_1": "001",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Path",
+    "button_name": "Lights",
+    "address_1": "005",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Path",
+    "button_name": "Hall",
+    "address_1": "00C",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Office",
+    "button_name": "Lights",
+    "address_1": "00F",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Nursery",
+    "button_name": "Lights",
+    "address_1": "002",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Master Closet",
+    "button_name": "His Closet",
+    "address_1": "00D",
+    "is_dimmer": false
+  },
+  {
+    "zone": "Master Closet",
+    "button_name": "Her Closet",
+    "address_1": "00B",
+    "is_dimmer": false
+  },
+  {
+    "zone": "Master Bath",
+    "button_name": "Vanity",
+    "address_1": "012",
+    "is_dimmer": false
+  },
+  {
+    "zone": "Master Bath",
+    "button_name": "Tub Lights",
+    "address_1": "011",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Master Bath",
+    "button_name": "Main Pots",
+    "address_1": "00E",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Master",
+    "button_name": "Nancy's Night Stand",
+    "address_1": "016",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Master",
+    "button_name": "Lights",
+    "address_1": "010",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Master",
+    "button_name": "Bernardo's Night Stand",
+    "address_1": "014",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Lower Bath",
+    "button_name": "Lights",
+    "address_1": "01D",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Lower Bath",
+    "button_name": "Fan and Vanity",
+    "address_1": "01C",
+    "is_dimmer": false
+  },
+  {
+    "zone": "Lower Bath",
+    "button_name": "Closet",
+    "address_1": "019",
+    "is_dimmer": false
+  },
+  {
+    "zone": "Living",
+    "button_name": "Main Lights",
+    "address_1": "006",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Living",
+    "button_name": "Lamp",
+    "address_1": "015",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Living",
+    "button_name": "Fireplace Lights",
+    "address_1": "003",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Kitchen",
+    "button_name": "Stove Lights",
+    "address_1": "007",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Kitchen",
+    "button_name": "Sink Lights",
+    "address_1": "008",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Kitchen",
+    "button_name": "Main Lights",
+    "address_1": "004",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Kitchen",
+    "button_name": "Back Lights",
+    "address_1": "013",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Guest Bed",
+    "button_name": "Right Closet",
+    "address_1": "021",
+    "is_dimmer": false
+  },
+  {
+    "zone": "Guest Bed",
+    "button_name": "Lights",
+    "address_1": "01E",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Guest Bed",
+    "button_name": "Left Closet Light",
+    "address_1": "01A",
+    "is_dimmer": false
+  },
+  {
+    "zone": "Entry",
+    "button_name": "Lights",
+    "address_1": "01B",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Entry",
+    "button_name": "Landscape Lights",
+    "address_1": "017",
+    "is_dimmer": false
+  },
+  {
+    "zone": "Dining",
+    "button_name": "Chandelier",
+    "address_1": "00A",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Den",
+    "button_name": "Lights",
+    "address_1": "022",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Den",
+    "button_name": "Laundry Hall Light",
+    "address_1": "018",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Den",
+    "button_name": "Bath Entrance Light",
+    "address_1": "020",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Back Door",
+    "button_name": "Side Door Light",
+    "address_1": "01F",
+    "is_dimmer": true
+  },
+  {
+    "zone": "Back Door",
+    "button_name": "Back Door Light",
+    "address_1": "009",
+    "is_dimmer": false
+  }
+]

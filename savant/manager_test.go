@@ -29,13 +29,13 @@ func TestLightsManager_Poll(t *testing.T) {
 	for i := range mock.output {
 		mock.output[i] = "0"
 	}
-	mock.output[15] = "100"
+	mock.output[0] = "100"
 	mock.error = nil
 
 	// Ensure we are getting expected state changes
 	count := struct{ A, B int }{}
 	manager.Poll(ctx, func(stateChange StateChange) {
-		if stateChange.ID == manager.ids[15] {
+		if stateChange.ID == manager.ids[0] {
 			count.A += 1
 			assert.Equal(t, 100, stateChange.Level)
 			assert.Equal(t, "ON", stateChange.State())
@@ -79,7 +79,7 @@ func TestLightsManager_TurnOn(t *testing.T) {
 	mock.error = nil
 
 	// Ensure we are getting expected state changes
-	switchId := manager.ids[15]
+	switchId := manager.ids[2]
 	dimmerId := manager.ids[0]
 	randomId := manager.ids[1]
 
@@ -114,11 +114,11 @@ func TestLightsManager_TurnOn(t *testing.T) {
 	// Ensure we're calling the command line as expected
 	assert.Len(t, mock.runs, 2, "Savant command line was called twice")
 
-	assert.Equal(t, "servicerequest", mock.runs[0][0], "servicerequest was called")
-	assert.Len(t, mock.runs[0], 11, "servicerequest was called with all arguments for a switch")
+	assert.Equal(t, "writestate", mock.runs[0][0], "writestate was called")
+	assert.Len(t, mock.runs[0], 3, "writestate was called with all arguments for a switch")
 
-	assert.Equal(t, "servicerequest", mock.runs[1][0], "servicerequest was called")
-	assert.Len(t, mock.runs[1], 13, "servicerequest was called with all arguments for a dimmer")
+	assert.Equal(t, "writestate", mock.runs[1][0], "writestate was called")
+	assert.Len(t, mock.runs[1], 3, "writestate was called with all arguments for a dimmer")
 }
 
 func TestLightsManager_TurnOff(t *testing.T) {
@@ -145,7 +145,7 @@ func TestLightsManager_TurnOff(t *testing.T) {
 	mock.error = nil
 
 	// Ensure we are getting expected state changes
-	switchId := manager.ids[15]
+	switchId := manager.ids[2]
 	dimmerId := manager.ids[0]
 	randomId := manager.ids[1]
 
@@ -180,11 +180,11 @@ func TestLightsManager_TurnOff(t *testing.T) {
 	// Ensure we're calling the command line as expected
 	assert.Len(t, mock.runs, 2, "Savant command line was called twice")
 
-	assert.Equal(t, "servicerequest", mock.runs[0][0], "servicerequest was called")
-	assert.Len(t, mock.runs[0], 11, "servicerequest was called with all arguments for a switch")
+	assert.Equal(t, "writestate", mock.runs[0][0], "writestate was called")
+	assert.Len(t, mock.runs[0], 3, "writestate was called with all arguments for a switch")
 
-	assert.Equal(t, "servicerequest", mock.runs[1][0], "servicerequest was called")
-	assert.Len(t, mock.runs[1], 13, "servicerequest was called with all arguments for a dimmer")
+	assert.Equal(t, "writestate", mock.runs[1][0], "writestate was called")
+	assert.Len(t, mock.runs[1], 3, "writestate was called with all arguments for a dimmer")
 }
 
 func TestLightsManager_Set(t *testing.T) {
@@ -236,6 +236,6 @@ func TestLightsManager_Set(t *testing.T) {
 
 	// Ensure we're calling the command line as expected
 	assert.Len(t, mock.runs, 1, "Savant command line was called once")
-	assert.Equal(t, "servicerequest", mock.runs[0][0], "servicerequest was called")
-	assert.Len(t, mock.runs[0], 13, "servicerequest was called with all arguments for a dimmer")
+	assert.Equal(t, "writestate", mock.runs[0][0], "writestate was called")
+	assert.Len(t, mock.runs[0], 3, "writestate was called with all arguments for a dimmer")
 }
