@@ -40,6 +40,14 @@ func (s Server) discoverySetup() {
 			"schema":        "json",
 			"state_topic":   s.buildTopic(light),
 			"command_topic": s.buildTopic(light, "set"),
+			"unique_id":     light.ID,
+			"device": map[string]interface{}{
+				"identifiers":    light.ID,
+				"manufacturer":   "Savant",
+				"model":          "Light",
+				"sw_version":     "savant.mqtt",
+				"suggested_area": light.Zone,
+			},
 		}
 
 		if light.IsDimmer {
