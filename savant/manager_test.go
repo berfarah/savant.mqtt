@@ -2,6 +2,7 @@ package savant
 
 import (
 	"context"
+	"fmt"
 	"testing"
 	"time"
 
@@ -51,6 +52,7 @@ func TestLightsManager_Poll(t *testing.T) {
 
 	// Ensure we're calling the command line as expected
 	assert.Len(t, mock.runs, 1, "Savant command line was called once")
+	fmt.Println(mock.runs[0])
 	assert.Equal(t, "readstate", mock.runs[0][0], "readstate was called")
 	assert.Len(t, mock.runs[0], len(manager.Lights)+1, "readstate was called with a state per light")
 }
@@ -63,7 +65,7 @@ func TestLightsManager_TurnOn(t *testing.T) {
 
 	ctx, cancel := context.WithCancel(context.Background())
 	go func() {
-		time.Sleep(15 * time.Millisecond)
+		time.Sleep(35 * time.Millisecond)
 		cancel()
 	}()
 
@@ -112,13 +114,12 @@ func TestLightsManager_TurnOn(t *testing.T) {
 	assert.Equal(t, 0, count[randomId])
 
 	// Ensure we're calling the command line as expected
-	assert.Len(t, mock.runs, 2, "Savant command line was called twice")
+	assert.Len(t, mock.runs, 1, "Savant command line was called once")
 
 	assert.Equal(t, "writestate", mock.runs[0][0], "writestate was called")
-	assert.Len(t, mock.runs[0], 3, "writestate was called with all arguments for a switch")
-
-	assert.Equal(t, "writestate", mock.runs[1][0], "writestate was called")
-	assert.Len(t, mock.runs[1], 3, "writestate was called with all arguments for a dimmer")
+	assert.Len(t, mock.runs[0][1:], 4, "writestate with 4 arguments (two pairs)")
+	assert.Equal(t, "100", mock.runs[0][2], "Level is set to 100 for on")
+	assert.Equal(t, "100", mock.runs[0][4], "Level is set to 100 for on")
 }
 
 func TestLightsManager_TurnOff(t *testing.T) {
@@ -129,7 +130,7 @@ func TestLightsManager_TurnOff(t *testing.T) {
 
 	ctx, cancel := context.WithCancel(context.Background())
 	go func() {
-		time.Sleep(15 * time.Millisecond)
+		time.Sleep(35 * time.Millisecond)
 		cancel()
 	}()
 
@@ -178,13 +179,12 @@ func TestLightsManager_TurnOff(t *testing.T) {
 	assert.Equal(t, 0, count[randomId])
 
 	// Ensure we're calling the command line as expected
-	assert.Len(t, mock.runs, 2, "Savant command line was called twice")
+	assert.Len(t, mock.runs, 1, "Savant command line was called once")
 
 	assert.Equal(t, "writestate", mock.runs[0][0], "writestate was called")
-	assert.Len(t, mock.runs[0], 3, "writestate was called with all arguments for a switch")
-
-	assert.Equal(t, "writestate", mock.runs[1][0], "writestate was called")
-	assert.Len(t, mock.runs[1], 3, "writestate was called with all arguments for a dimmer")
+	assert.Len(t, mock.runs[0][1:], 4, "writestate with 4 arguments (two pairs)")
+	assert.Equal(t, "0", mock.runs[0][2], "Level is set to 0 for off")
+	assert.Equal(t, "0", mock.runs[0][4], "Level is set to 0 for off")
 }
 
 func TestLightsManager_Set(t *testing.T) {
@@ -195,7 +195,7 @@ func TestLightsManager_Set(t *testing.T) {
 
 	ctx, cancel := context.WithCancel(context.Background())
 	go func() {
-		time.Sleep(15 * time.Millisecond)
+		time.Sleep(35 * time.Millisecond)
 		cancel()
 	}()
 
@@ -236,6 +236,8 @@ func TestLightsManager_Set(t *testing.T) {
 
 	// Ensure we're calling the command line as expected
 	assert.Len(t, mock.runs, 1, "Savant command line was called once")
+
 	assert.Equal(t, "writestate", mock.runs[0][0], "writestate was called")
-	assert.Len(t, mock.runs[0], 3, "writestate was called with all arguments for a dimmer")
+	assert.Len(t, mock.runs[0][1:], 2, "writestate with 2 arguments (one pair)")
+	assert.Equal(t, "50", mock.runs[0][2], "Level is set to 50")
 }
