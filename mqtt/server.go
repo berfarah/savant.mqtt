@@ -12,13 +12,14 @@ import (
 )
 
 type Server struct {
-	config  *config.Config
-	Client  mqtt.Client
-	Manager savant.LightsManager
+	connected chan bool
+	config    *config.Config
+	Client    mqtt.Client
+	Manager   savant.LightsManager
 }
 
 func New(config *config.Config, manager savant.LightsManager) *Server {
-	return &Server{config: config, Manager: manager}
+	return &Server{connected: make(chan bool), config: config, Manager: manager}
 }
 
 func (s Server) buildTopic(light *savant.Light, parts ...string) string {
@@ -91,6 +92,7 @@ func (s *Server) OnConnect(client mqtt.Client) {
 	log.Println("DEBUG: Connected!")
 	s.discoverySetup()
 	s.subscriptions()
+	close(s.connected)
 }
 
 type mqttPayload struct {
@@ -98,7 +100,10 @@ type mqttPayload struct {
 	Brightness int    `json:"brightness"`
 }
 
-func (s Server) Run(ctx context.Context) {
+func (s *Server) Run(ctx context.Context) {
+	log.Println("DEBUG: Connecting...")
+	<-s.connected
+
 	log.Println("DEBUG: Starting polling cycle")
 	s.Manager.Poll(ctx, func(event savant.StateChange) {
 		light, ok := s.Manager.Lights[event.ID]
