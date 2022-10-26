@@ -93,7 +93,11 @@ type mqttPayload struct {
 func (s Server) Run(ctx context.Context) {
 	log.Println("DEBUG: Starting polling cycle")
 	s.Manager.Poll(ctx, func(event savant.StateChange) {
-		light := s.Manager.Lights[event.ID]
+		light, ok := s.Manager.Lights[event.ID]
+		if !ok {
+			log.Println("Couldn't locate light with ID", event.ID)
+			return
+		}
 
 		payload := mqttPayload{State: event.State(), Brightness: event.Level}
 		b, err := json.Marshal(payload)
@@ -115,7 +119,11 @@ func (s Server) Run(ctx context.Context) {
 
 func (s Server) Handler(client mqtt.Client, msg mqtt.Message) {
 	id := s.topicToID(msg.Topic())
-	light := s.Manager.Lights[id]
+	light, ok := s.Manager.Lights[id]
+	if !ok {
+		log.Println("Couldn't locate light with ID", id)
+		return
+	}
 
 	var payload mqttPayload
 	if err := json.Unmarshal(msg.Payload(), &payload); err != nil {
