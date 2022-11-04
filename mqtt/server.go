@@ -12,10 +12,11 @@ import (
 )
 
 type Server struct {
-	connected chan bool
-	config    *config.Config
-	Client    mqtt.Client
-	Manager   savant.LightsManager
+	connected     chan bool
+	connectedOnce int
+	config        *config.Config
+	Client        mqtt.Client
+	Manager       savant.LightsManager
 }
 
 func New(config *config.Config, manager savant.LightsManager) *Server {
@@ -92,7 +93,10 @@ func (s *Server) OnConnect(client mqtt.Client) {
 	log.Println("DEBUG: Connected!")
 	s.discoverySetup()
 	s.subscriptions()
-	close(s.connected)
+	if s.connectedOnce == 0 {
+		close(s.connected)
+	}
+	s.connectedOnce += 1
 }
 
 type mqttPayload struct {
