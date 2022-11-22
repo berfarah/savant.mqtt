@@ -1,6 +1,7 @@
 [
   {
     "id": "001_1",
+    "zone": "Upper Bath",
     "name": "Upper Bath Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_001",
@@ -8,6 +9,7 @@
   },
   {
     "id": "005_1",
+    "zone": "Path",
     "name": "Path Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_005",
@@ -15,6 +17,7 @@
   },
   {
     "id": "00C_1",
+    "zone": "Path",
     "name": "Path Hall",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_00C",
@@ -22,6 +25,7 @@
   },
   {
     "id": "00F_1",
+    "zone": "Office",
     "name": "Office Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_00F",
@@ -29,6 +33,7 @@
   },
   {
     "id": "002_1",
+    "zone": "Nursery",
     "name": "Nursery Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_002",
@@ -36,6 +41,7 @@
   },
   {
     "id": "00D_1",
+    "zone": "Master Closet",
     "name": "Master Closet His Closet",
     "is_dimmer": false,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_00D",
@@ -43,6 +49,7 @@
   },
   {
     "id": "00B_1",
+    "zone": "Master Closet",
     "name": "Master Closet Her Closet",
     "is_dimmer": false,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_00B",
@@ -50,6 +57,7 @@
   },
   {
     "id": "012_1",
+    "zone": "Master Bath",
     "name": "Master Bath Vanity",
     "is_dimmer": false,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_012",
@@ -57,6 +65,7 @@
   },
   {
     "id": "011_1",
+    "zone": "Master Bath",
     "name": "Master Bath Tub Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_011",
@@ -64,6 +73,7 @@
   },
   {
     "id": "00E_1",
+    "zone": "Master Bath",
     "name": "Master Bath Main Pots",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_00E",
@@ -71,6 +81,7 @@
   },
   {
     "id": "016_1",
+    "zone": "Master",
     "name": "Master Nancy's Night Stand",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_016",
@@ -78,6 +89,7 @@
   },
   {
     "id": "010_1",
+    "zone": "Master",
     "name": "Master Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_010",
@@ -85,6 +97,7 @@
   },
   {
     "id": "014_1",
+    "zone": "Master",
     "name": "Master Bernardo's Night Stand",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_014",
@@ -92,6 +105,7 @@
   },
   {
     "id": "01D_1",
+    "zone": "Lower Bath",
     "name": "Lower Bath Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_01D",
@@ -99,6 +113,7 @@
   },
   {
     "id": "01C_1",
+    "zone": "Lower Bath",
     "name": "Lower Bath Fan and Vanity",
     "is_dimmer": false,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_01C",
@@ -106,6 +121,7 @@
   },
   {
     "id": "019_1",
+    "zone": "Lower Bath",
     "name": "Lower Bath Closet",
     "is_dimmer": false,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_019",
@@ -113,6 +129,7 @@
   },
   {
     "id": "006_1",
+    "zone": "Living",
     "name": "Living Main Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_006",
@@ -120,6 +137,7 @@
   },
   {
     "id": "015_1",
+    "zone": "Living",
     "name": "Living Lamp",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_015",
@@ -127,6 +145,7 @@
   },
   {
     "id": "003_1",
+    "zone": "Living",
     "name": "Living Fireplace Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_003",
@@ -134,6 +153,7 @@
   },
   {
     "id": "007_1",
+    "zone": "Kitchen",
     "name": "Kitchen Stove Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_007",
@@ -141,6 +161,7 @@
   },
   {
     "id": "008_1",
+    "zone": "Kitchen",
     "name": "Kitchen Sink Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_008",
@@ -148,6 +169,7 @@
   },
   {
     "id": "004_1",
+    "zone": "Kitchen",
     "name": "Kitchen Main Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_004",
@@ -155,6 +177,7 @@
   },
   {
     "id": "013_1",
+    "zone": "Kitchen",
     "name": "Kitchen Back Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_013",
@@ -162,6 +185,7 @@
   },
   {
     "id": "021_1",
+    "zone": "Guest Bed",
     "name": "Guest Bed Right Closet",
     "is_dimmer": false,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_021",
@@ -169,6 +193,7 @@
   },
   {
     "id": "01E_1",
+    "zone": "Guest Bed",
     "name": "Guest Bed Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_01E",
@@ -176,6 +201,7 @@
   },
   {
     "id": "01A_1",
+    "zone": "Guest Bed",
     "name": "Guest Bed Left Closet Light",
     "is_dimmer": false,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_01A",
@@ -183,6 +209,7 @@
   },
   {
     "id": "01B_1",
+    "zone": "Entry",
     "name": "Entry Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_01B",
@@ -190,6 +217,7 @@
   },
   {
     "id": "017_1",
+    "zone": "Entry",
     "name": "Entry Landscape Lights",
     "is_dimmer": false,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_017",
@@ -197,6 +225,7 @@
   },
   {
     "id": "00A_1",
+    "zone": "Dining",
     "name": "Dining Chandelier",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_00A",
@@ -204,6 +233,7 @@
   },
   {
     "id": "022_1",
+    "zone": "Den",
     "name": "Den Lights",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_022",
@@ -211,6 +241,7 @@
   },
   {
     "id": "018_1",
+    "zone": "Den",
     "name": "Den Laundry Hall Light",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_018",
@@ -218,6 +249,7 @@
   },
   {
     "id": "020_1",
+    "zone": "Den",
     "name": "Den Bath Entrance Light",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_020",
@@ -225,6 +257,7 @@
   },
   {
     "id": "01F_1",
+    "zone": "Back Door",
     "name": "Back Door Side Door Light",
     "is_dimmer": true,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_01F",
@@ -232,6 +265,7 @@
   },
   {
     "id": "009_1",
+    "zone": "Back Door",
     "name": "Back Door Back Door Light",
     "is_dimmer": false,
     "read_state_name": "Farah SEA.RacePointMedia_host.CurrentDimmerLevel_1_009",
