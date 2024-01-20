@@ -4,7 +4,7 @@ if ! command -v jq &> /dev/null; then
   echo "Requires jq (https://stedolan.github.io/jq)"
 fi
 
-transform='[.Lighting[] | {                                                                      ⇡ state-based-workaround :: ~5 … :: ⬡
+transformation='[.Lighting[] | {
   zone: .["Controller Zone"],
   button_name: .["Button Label"],
   address_1: .Address1,
