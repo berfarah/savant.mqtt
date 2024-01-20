@@ -44,6 +44,7 @@ func (s Server) discoverySetup() {
 			"command_topic": s.buildTopic(light, "set"),
 			"unique_id":     light.ID,
 			"device": map[string]interface{}{
+				"name":           light.Name,
 				"identifiers":    light.ID,
 				"manufacturer":   "Savant",
 				"model":          "Light",
