@@ -7,41 +7,25 @@ It's set up to work with [Homeassistant's MQTT discovery](https://www.home-assis
 
 ## Setup
 
-### Necessary files for the service
+Before you get started generating files, make sure you open your blueprint
+editor with the `rpmConfig` you plan on deploying. This will load the file into
+cache, which is where our generator will put some needed details.
 
-1. Get your lights registry from Savant by exporting loads (plist) and
-   converting them with `./transform [load.plist] > [oldfile]`
-2. Set up your MQTT broker in your environment
-3. Create a `savantmqtt.conf` file (see [config](./config/config.go) for
-   details on settings.
+### Generate your files
 
-### Configuring Savant
+    go run ./generate [path to].rpmConfig
 
-Because managing state is faster than making service requests, we'll want to use
-triggers to update our lights.
+Will create the following for you:
+- `triggers.plist` for importing into Savant
+- Necessary workflows for your triggers to work
+- `loads.json` for referencing in your configuration file
 
-#### Required Workflows for Triggers
+### Steps you have to take yourself
 
-Steps:
-- View Services
-- Pick the service where you need lights to match state
-- Create a new Service Request (naming convention: `DimmerSetVariable_{Address2}_{Address1}`
-- Double click the service to open in automator
-- Savant Action Argument Setter as step 1 with DimmerLevel from State Center and
-    Value of `userDefined.SetDimmerLevel_{Address2}_{Address1}`
-- Main action with DimmerSet on Lighting Controller Source
-
-#### Triggers
-
-You can generate the triggers with: `./converttrigger/transform > tmp.json`
-
-```bin/bash
-./converttrigger/transform [load.plist] > tmp.json
-go run ./converttrigger/main.go tmp.json
-# Import tmp.plist as into triggers - you have to do this in savant
-# Clean up
-rm tmp.json tmp.plist
-```
+1. Open your triggers window in the blueprint editor and import the
+   `triggers.plist` in the bottom right corner
+2. Create a `savantmqtt.conf` file (see [config](./config/config.go) for
+   details on settings).
 
 ### Getting running
 
